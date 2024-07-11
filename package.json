@@ -1,0 +1,14 @@
+{
+  "name": "b4a48d916695afde",
+  "main": "b4a48d916695afde@1476.js",
+  "version": "1476.0.0",
+  "homepage": "https://observablehq.com/d/b4a48d916695afde",
+  "author": {
+    "name": "Cheeson Lau's Workspace",
+    "url": "https://observablehq.com/@cheeson-lau-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}

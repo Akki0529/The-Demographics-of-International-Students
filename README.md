@@ -1,22 +1,33 @@
-International Students are a massive cog in the greater system that accounts for college students in the United States. They come from a diverse panel of countries, and pursue an even wider variety of disciplines. According to UW, they account for 14.2% of UW's student body, almost 10% higher than the national average. Yet, there seems to be a gap between local and international students when it comes to social interaction and a general understanding of each other's similarities & differences. By providing various figures and visualizations describing the international student experience, we aim to bridge this gap.
+# The Demographics of International Students
 
-In exploring this topic, we came up with several key questions that we were looking to solve regarding international students and their academic patterns.
+https://observablehq.com/d/b4a48d916695afde@1476
 
-Question 1
+View this notebook in your browser by running a web server in this folder. For
+example:
 
-1.) How has the international student demographic changed over time? How has the distribution of majors and scores changed over this span?
+~~~sh
+npx http-server
+~~~
 
-Question 2:
+Or, use the [Observable Runtime](https://github.com/observablehq/runtime) to
+import this module directly into your application. To npm install:
 
-2.) How do the majors of international students vary across different countries of origin?
+~~~sh
+npm install @observablehq/runtime@5
+npm install https://api.observablehq.com/d/b4a48d916695afde@1476.tgz?v=3
+~~~
 
-Question 3:
+Then, import your notebook and the runtime as:
 
-3.) Where do international students get their tuition from?
+~~~js
+import {Runtime, Inspector} from "@observablehq/runtime";
+import define from "b4a48d916695afde";
+~~~
 
-Question 4
+To log the value of the cell named “foo”:
 
-4.) Which cities do international students tend to attend for school?
-
-By answering these questions, we open a window to see aspects of the international student experience. This is valuable for a number of reasons.
-
+~~~js
+const runtime = new Runtime();
+const main = runtime.module(define);
+main.value("foo").then(value => console.log(value));
+~~~
